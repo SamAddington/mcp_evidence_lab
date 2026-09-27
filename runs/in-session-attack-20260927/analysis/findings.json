@@ -1,0 +1,33 @@
+{
+  "finding_count": 3,
+  "findings": [
+    {
+      "detail": "Hash the full canonical definition, not the displayed title or name.",
+      "evidence": [
+        "evidence/tool-manifest.json"
+      ],
+      "rule": "MCP-DFIR-001",
+      "severity": "high",
+      "title": "Tool definition contains instruction-like hidden content"
+    },
+    {
+      "detail": "The instruction existed on the stdio wire and may not survive server shutdown.",
+      "evidence": [
+        "evidence/mcp-wire.jsonl"
+      ],
+      "rule": "MCP-DFIR-002",
+      "severity": "critical",
+      "title": "MCP tool result carried an agent-directed instruction"
+    },
+    {
+      "detail": "Use per-request protocol metadata, JSON-RPC IDs, trace IDs, PID lineage, and time\u2014not a removed protocol session header.",
+      "evidence": [
+        "evidence/mcp-wire.jsonl"
+      ],
+      "rule": "MCP-DFIR-006",
+      "severity": "info",
+      "title": "Modern stateless MCP traffic detected"
+    }
+  ],
+  "run": "runs/in-session-attack-20260927"
+}

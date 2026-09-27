@@ -1,0 +1,15 @@
+{
+  "finding_count": 1,
+  "findings": [
+    {
+      "detail": "Use per-request protocol metadata, JSON-RPC IDs, trace IDs, PID lineage, and time\u2014not a removed protocol session header.",
+      "evidence": [
+        "evidence/mcp-wire.jsonl"
+      ],
+      "rule": "MCP-DFIR-006",
+      "severity": "info",
+      "title": "Modern stateless MCP traffic detected"
+    }
+  ],
+  "run": "examples/baseline"
+}

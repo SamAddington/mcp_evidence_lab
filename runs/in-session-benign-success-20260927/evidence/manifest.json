@@ -1,0 +1,34 @@
+{
+  "acquired_at_utc": "2026-09-27T20:14:00.634990Z",
+  "acquisition_tool": "run_lab.py",
+  "format": "mcp-evidence-lab/1",
+  "hash_algorithm": "SHA-256",
+  "items": [
+    {
+      "bytes": 453,
+      "path": "evidence/agent-events.jsonl",
+      "sha256": "4f7689a3abd2be055d3c954c22b28e4439f2ca7fe29feef766c87ad0144259da"
+    },
+    {
+      "bytes": 390,
+      "path": "evidence/egress.jsonl",
+      "sha256": "b9c4f9082a1fd3860b67dff2c75be8125d9474977e81b1f61f30211fd0b41b06"
+    },
+    {
+      "bytes": 3204,
+      "path": "evidence/mcp-wire.jsonl",
+      "sha256": "fc725e0e85199c7cbf961b6207e84118beab20c24cf60f66a4b3a48e1e3f7891"
+    },
+    {
+      "bytes": 181,
+      "path": "evidence/process.jsonl",
+      "sha256": "08c2312450eb6e35714b52a7892ce667eb40eb9d13c62b55af3b5b630439b20f"
+    },
+    {
+      "bytes": 1728,
+      "path": "evidence/tool-manifest.json",
+      "sha256": "a2e66fb2a96b536e01ff30b28c350cd73fb801c3385fed5c77ead9553716cf03"
+    }
+  ],
+  "scenario": "benign"
+}

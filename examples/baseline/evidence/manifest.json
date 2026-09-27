@@ -1,0 +1,39 @@
+{
+  "acquired_at_utc": "2026-09-27T20:14:49.776416Z",
+  "acquisition_tool": "run_lab.py",
+  "format": "mcp-evidence-lab/1",
+  "hash_algorithm": "SHA-256",
+  "items": [
+    {
+      "bytes": 496,
+      "path": "evidence/agent-events.jsonl",
+      "sha256": "07da358e730c421f99d9f82018c27f1cc14be88be1431da58ee442f740b041a5"
+    },
+    {
+      "bytes": 573,
+      "path": "evidence/host.json",
+      "sha256": "2bd0ce8a9c9858288b82e1bd6b1ed470511815a6507b86f7522eee82a2d292f4"
+    },
+    {
+      "bytes": 5066,
+      "path": "evidence/mcp-wire.jsonl",
+      "sha256": "beeaf7aa4f946ef0341de985cf44fd8e25fb3f769e88f3fa6367e306e09c3e85"
+    },
+    {
+      "bytes": 471,
+      "path": "evidence/process.jsonl",
+      "sha256": "64f365fbc304331527fee740ba11b68f3bbc74bfe320dd422ee7963b701919a5"
+    },
+    {
+      "bytes": 199,
+      "path": "evidence/server-stderr.jsonl",
+      "sha256": "3d7ab021864f3be35219dbd8533b816b2d3b9108514684fea9571d46ba62f1e2"
+    },
+    {
+      "bytes": 1778,
+      "path": "evidence/tool-manifest.json",
+      "sha256": "6ad08511cd91252c7a51aee509e1529a912e748f86b3335ce2e1326ae9ec9774"
+    }
+  ],
+  "scenario": "baseline"
+}

@@ -1,0 +1,8 @@
+index=agent sourcetype=mcp:tool earliest=-24h
+| eval corr=coalesce(trace_id, agent_session_id, host_pid."/".jsonrpc_id)
+| transaction corr maxspan=10m
+| search (direction=server_to_client AND instruction_like=true)
+         (event=file_read AND sensitivity IN (secret,credential,private_source))
+         (event=network_egress)
+| table _time host corr server_name tool_name approval_source file_path dest_host dest_ip payload_hash
+

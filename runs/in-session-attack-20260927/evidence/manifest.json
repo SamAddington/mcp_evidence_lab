@@ -1,0 +1,24 @@
+{
+  "acquired_at_utc": "2026-09-27T20:14:00.634475Z",
+  "acquisition_tool": "run_lab.py",
+  "format": "mcp-evidence-lab/1",
+  "hash_algorithm": "SHA-256",
+  "items": [
+    {
+      "bytes": 3588,
+      "path": "evidence/mcp-wire.jsonl",
+      "sha256": "4941121c30b8c4cfd4c303a52210e0723acccfce318861b87bca9d3519e1f23c"
+    },
+    {
+      "bytes": 181,
+      "path": "evidence/process.jsonl",
+      "sha256": "63764bbdd9aee2514e636cce2536279a1ae80c468b977d3b2da6f05a0a206f57"
+    },
+    {
+      "bytes": 1847,
+      "path": "evidence/tool-manifest.json",
+      "sha256": "2cb753d969cbcda001489bee153d9daa12122ce5ff67dc0a18699a864d920e38"
+    }
+  ],
+  "scenario": "attack"
+}

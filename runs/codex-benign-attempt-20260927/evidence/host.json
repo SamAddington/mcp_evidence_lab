@@ -1,0 +1,22 @@
+{
+  "ts_utc": "2026-09-27T20:08:44.443213Z",
+  "monotonic_ns": 1838717997721,
+  "event": "host.snapshot",
+  "hostname": "e5791d0af4c6",
+  "os": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "argv": [
+    "run_codex_pilot.py",
+    "--scenario",
+    "benign"
+  ],
+  "cwd": "/workspace/scratch/4d4ceaddd22a/lab_work/mcp_evidence_lab",
+  "env_names": [
+    "OTEL_RESOURCE_ATTRIBUTES",
+    "OTEL_TRACES_SAMPLER",
+    "OTEL_TRACES_SAMPLER_ARG"
+  ],
+  "pid": 2,
+  "ppid": 1
+}

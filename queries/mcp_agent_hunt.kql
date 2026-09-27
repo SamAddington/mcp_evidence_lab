@@ -1,0 +1,24 @@
+// Illustrative Microsoft Sentinel / Defender schema mapping.
+// Replace table and field names with your OTel, EDR, gateway, and agent-log normalization.
+let window = 10m;
+let MCPCalls = AgentToolEvents
+| where Timestamp > ago(24h)
+| where Protocol == "mcp"
+| project Timestamp, DeviceId, AgentSessionId, TraceId, ServerName, ToolName,
+          ToolArgumentsHash, ToolResultHash, DecisionSource, ApprovalDecision;
+let SensitiveReads = DeviceFileEvents
+| where Timestamp > ago(24h)
+| where ActionType in ("FileRead", "SensitiveFileRead")
+| project ReadTime=Timestamp, DeviceId, InitiatingProcessId, FileName, FolderPath, SHA256;
+let Egress = DeviceNetworkEvents
+| where Timestamp > ago(24h)
+| project NetTime=Timestamp, DeviceId, InitiatingProcessId, RemoteUrl, RemoteIP, RemotePort;
+MCPCalls
+| join kind=innerunique SensitiveReads on DeviceId
+| where ReadTime between (Timestamp .. Timestamp + window)
+| join kind=leftouter Egress on DeviceId
+| where NetTime between (ReadTime .. ReadTime + window)
+| project Timestamp, DeviceId, TraceId, ServerName, ToolName, DecisionSource,
+          ApprovalDecision, FolderPath, FileName, SHA256, NetTime, RemoteUrl, RemoteIP
+| order by Timestamp asc
+

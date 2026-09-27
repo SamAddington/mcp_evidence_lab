@@ -1,0 +1,34 @@
+{
+  "finding_count": 3,
+  "findings": [
+    {
+      "detail": "Correlate the decision source, approval source, path, and content hash.",
+      "evidence": [
+        "evidence/agent-events.jsonl"
+      ],
+      "rule": "MCP-DFIR-003",
+      "severity": "high",
+      "title": "Tool-derived decision crossed into a sensitive file read"
+    },
+    {
+      "detail": "Corroborate server diagnostics with EDR or live process telemetry; a later disk image will not reconstruct a short-lived process tree.",
+      "evidence": [
+        "evidence/process.jsonl",
+        "evidence/server-stderr.jsonl"
+      ],
+      "rule": "MCP-DFIR-005",
+      "severity": "medium",
+      "title": "Ephemeral MCP child process observed"
+    },
+    {
+      "detail": "Use per-request protocol metadata, JSON-RPC IDs, trace IDs, PID lineage, and time\u2014not a removed protocol session header.",
+      "evidence": [
+        "evidence/mcp-wire.jsonl"
+      ],
+      "rule": "MCP-DFIR-006",
+      "severity": "info",
+      "title": "Modern stateless MCP traffic detected"
+    }
+  ],
+  "run": "runs/benign-control-20260927"
+}

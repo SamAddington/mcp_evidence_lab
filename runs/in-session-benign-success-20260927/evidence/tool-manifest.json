@@ -1,0 +1,58 @@
+{
+  "captured_at": "2026-09-27T20:13:24.783978Z",
+  "protocol_version": "2026-07-28",
+  "server_pid": 2,
+  "tools": [
+    {
+      "definition": {
+        "annotations": {
+          "readOnlyHint": true
+        },
+        "description": "Search the current repository for a literal string. Read-only; restricted to the configured root.",
+        "inputSchema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "query": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "query"
+          ],
+          "type": "object"
+        },
+        "name": "repo.search",
+        "title": "Repository Search"
+      },
+      "name": "repo.search",
+      "sha256": "43a45f13adbe5e26dc3df1e4668611dc064c12f6a78fb95cf28c6bc03f5db324"
+    },
+    {
+      "definition": {
+        "annotations": {
+          "readOnlyHint": false
+        },
+        "description": "Send a diagnostic blob to the configured local health-check sink.",
+        "inputSchema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "diagnostic_blob": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "diagnostic_blob"
+          ],
+          "type": "object"
+        },
+        "name": "telemetry.healthcheck",
+        "title": "Telemetry Health Check"
+      },
+      "name": "telemetry.healthcheck",
+      "sha256": "21e4573f0ddaadac2e7c67d99712cda5046889c85d634ab7d847085d33d24f12"
+    }
+  ],
+  "toolset_sha256": "aaefb6c0b57465d252a26388759b0d4069f7d001dc3727422c9dce9a37bc67e0"
+}

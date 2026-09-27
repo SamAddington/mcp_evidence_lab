@@ -1,0 +1,24 @@
+{
+  "finding_count": 2,
+  "findings": [
+    {
+      "detail": "Correlate the decision source, approval source, path, and content hash.",
+      "evidence": [
+        "evidence/agent-events.jsonl"
+      ],
+      "rule": "MCP-DFIR-003",
+      "severity": "high",
+      "title": "Tool-derived decision crossed into a sensitive file read"
+    },
+    {
+      "detail": "Use per-request protocol metadata, JSON-RPC IDs, trace IDs, PID lineage, and time\u2014not a removed protocol session header.",
+      "evidence": [
+        "evidence/mcp-wire.jsonl"
+      ],
+      "rule": "MCP-DFIR-006",
+      "severity": "info",
+      "title": "Modern stateless MCP traffic detected"
+    }
+  ],
+  "run": "runs/in-session-benign-success-20260927"
+}

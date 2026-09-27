@@ -1,0 +1,2 @@
+{"command": ["/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3", "-m", "lab.mcp_server"], "cwd": "/workspace/scratch/4d4ceaddd22a/lab_work/mcp_evidence_lab", "event": "process.start", "monotonic_ns": 2204140201084, "pid": 15, "ppid": 12, "role": "mcp_server", "ts_utc": "2026-09-27T20:14:49.865424Z"}
+{"event": "process.stop", "monotonic_ns": 2204565399287, "pid": 15, "returncode": 0, "role": "mcp_server", "ts_utc": "2026-09-27T20:14:50.290620Z"}

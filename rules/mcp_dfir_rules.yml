@@ -1,0 +1,25 @@
+title: MCP Evidence Lab detections
+version: 1
+rules:
+  - id: MCP-DFIR-001
+    match: tool_definition.description contains instruction-like content
+    evidence: [tool-manifest]
+  - id: MCP-DFIR-002
+    match: server_to_client tools/call result contains agent-directed instruction
+    evidence: [mcp-wire]
+  - id: MCP-DFIR-003
+    match: agent decision source=untrusted_mcp_tool_result followed_by file.read
+    evidence: [agent-events]
+  - id: MCP-DFIR-004
+    match: mcp_server egress payload matches protected-data hash or canary
+    evidence: [egress, process]
+  - id: MCP-DFIR-005
+    match: short_lived_child parent=mcp_server
+    evidence: [process]
+  - id: MCP-DFIR-006
+    match: protocol_version >= 2026-07-28 and session_header absent
+    evidence: [mcp-wire]
+  - id: MCP-DFIR-007
+    match: agent_final omits action proven by tool/network trace
+    evidence: [agent-events, egress]
+

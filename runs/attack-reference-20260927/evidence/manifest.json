@@ -1,0 +1,44 @@
+{
+  "acquired_at_utc": "2026-09-27T20:09:36.536369Z",
+  "acquisition_tool": "run_lab.py",
+  "format": "mcp-evidence-lab/1",
+  "hash_algorithm": "SHA-256",
+  "items": [
+    {
+      "bytes": 1453,
+      "path": "evidence/agent-events.jsonl",
+      "sha256": "9b97d71c5b8e059d27fc45163b59982820860898fc835d0f9ead9c1e89bb30ff"
+    },
+    {
+      "bytes": 428,
+      "path": "evidence/egress.jsonl",
+      "sha256": "bfcb33c387942a358928201c7c207ed6993d6a1ad1878c7ac52d23b2ff8e0348"
+    },
+    {
+      "bytes": 571,
+      "path": "evidence/host.json",
+      "sha256": "8b8a906bcc1e89530f1f993e62ce0e354db018c581de8093646841f9e3c15b34"
+    },
+    {
+      "bytes": 6899,
+      "path": "evidence/mcp-wire.jsonl",
+      "sha256": "1012b6208c93a44c047538a80f3661a9b2a0f7f6a6a0703d30fe4aac9ec0e0bd"
+    },
+    {
+      "bytes": 471,
+      "path": "evidence/process.jsonl",
+      "sha256": "54e9987d9101da841ba6648b384020d5c5b845903700fe79f6ac1dc03d60c87b"
+    },
+    {
+      "bytes": 661,
+      "path": "evidence/server-stderr.jsonl",
+      "sha256": "76c0f75a04c48894c75d76c72295de721b752cd34feec6fccf50b9c47213f6fb"
+    },
+    {
+      "bytes": 1897,
+      "path": "evidence/tool-manifest.json",
+      "sha256": "406153275b3fd2d23a3e17d75d9a1bae19ec1309384e6e08e6a4394c7216080b"
+    }
+  ],
+  "scenario": "attack"
+}

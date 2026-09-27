@@ -1,0 +1,1 @@
+{"command": "python -m lab.mcp_server", "event": "process.start", "monotonic_ns": 2114192204956, "pid": 2, "ppid": 1, "role": "mcp_server", "ts_utc": "2026-09-27T20:13:19.917424Z"}

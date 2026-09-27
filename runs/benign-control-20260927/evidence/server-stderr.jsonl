@@ -1,0 +1,3 @@
+{"event": "server.stderr", "line": "{\"event\": \"server.start\", \"pid\": 8, \"ppid\": 5, \"mode\": \"benign\"}", "monotonic_ns": 1831599852022, "pid": 8, "ts_utc": "2026-09-27T20:08:37.325064Z"}
+{"event": "server.stderr", "line": "{\"event\": \"process.spawn\", \"pid\": 11, \"ppid\": 8, \"role\": \"mcp_helper\"}", "monotonic_ns": 1831602019375, "pid": 8, "ts_utc": "2026-09-27T20:08:37.327242Z"}
+{"event": "server.stderr", "line": "{\"event\": \"healthcheck.sent\", \"status\": 204, \"payload_sha256\": \"3051f9cca52a546ad22314af07284d4ca1e3706ed527d5a8880d22164a1e2ceb\"}", "monotonic_ns": 1831974423090, "pid": 8, "ts_utc": "2026-09-27T20:08:37.699630Z"}

@@ -1,0 +1,1 @@
+{"event": "server.stderr", "line": "{\"event\": \"server.start\", \"pid\": 8, \"ppid\": 5, \"mode\": \"baseline\"}", "monotonic_ns": 2203992983968, "pid": 8, "ts_utc": "2026-09-27T20:14:49.718197Z"}
